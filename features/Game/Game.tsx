@@ -67,39 +67,43 @@ export const Game: React.FC = () => {
   const isCorrectAnswer = selectedAnswer === currentCard["right-answer"][0];
 
   return (
-    <div>
-      <h1>Flashcard Game</h1>
-      <div>
-        <h2 style={{ marginTop: "64px" }}>{currentCard["question-title"]}</h2>
-        <div>
-          {shuffledAnswers.map((answer) => (
-            <button
-              key={answer}
-              onClick={() => handleAnswerClick(answer)}
-              disabled={showResult}
-              style={{
-                display: "block",
-                margin: "10px auto",
-                padding: "10px",
-                backgroundColor: showResult
-                  ? answer === currentCard["right-answer"][0]
-                    ? "green"
-                    : selectedAnswer === answer
-                    ? "red"
-                    : "gray"
-                  : "#242323",
-              }}
-            >
-              {answer}
-            </button>
-          ))}
-        </div>
+    <div style={{ marginTop: "32px" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <h2>{currentCard["question-title"]}</h2>
+        {shuffledAnswers.map((answer) => (
+          <button
+            key={answer}
+            onClick={() => handleAnswerClick(answer)}
+            disabled={showResult}
+            style={{
+              display: "block",
+              margin: "8px auto",
+              padding: "10px",
+              backgroundColor: showResult
+                ? answer === currentCard["right-answer"][0]
+                  ? "green"
+                  : selectedAnswer === answer
+                  ? "red"
+                  : "gray"
+                : "#242323",
+            }}
+          >
+            {answer}
+          </button>
+        ))}
         {showResult && (
           <div>
             <p>{isCorrectAnswer ? "Correct!" : "Wrong Answer"}</p>
             <button onClick={handleNextCard}>Next Question</button>
           </div>
         )}
+        <div>{seenCards.length + " / " + flashcards.length}</div>
       </div>
     </div>
   );
