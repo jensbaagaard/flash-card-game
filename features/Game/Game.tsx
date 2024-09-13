@@ -66,6 +66,12 @@ export const Game: React.FC = () => {
 
   const isCorrectAnswer = selectedAnswer === currentCard["right-answer"][0];
 
+  function randomEmoji(): string {
+    const emojis = ["🔥", "🚀", "🌟", "🎉", "🎊", "🎈", "🎇", "🥳"];
+
+    return emojis[seenCards.length % emojis.length];
+  }
+
   return (
     <div style={{ marginTop: "32px" }}>
       <div
@@ -98,9 +104,24 @@ export const Game: React.FC = () => {
           </button>
         ))}
         {showResult && (
-          <div>
-            <p>{isCorrectAnswer ? "Correct!" : "Wrong Answer"}</p>
-            <button onClick={handleNextCard}>Next Question</button>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <p>{isCorrectAnswer ? "Korrekt!" : "Forkert svar"}</p>
+            <button
+              style={{
+                display: "block",
+                margin: "8px auto",
+                padding: "10px",
+              }}
+              onClick={handleNextCard}
+            >
+              {randomEmoji()} Næste spørgsmål {randomEmoji()}
+            </button>
           </div>
         )}
         <div>{seenCards.length + " / " + flashcards.length}</div>
