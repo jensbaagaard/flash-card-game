@@ -1551,7 +1551,7 @@ export const flashcards: Flashcard[] = [
     "wrong-answers": [
       "Køretøjets konstruktion og udstyr",
       "Evnen til at forudse og analysere risici",
-      "Manglende rutine og tendens til nattetilbud",
+      "Manglende rutine og tendens til natte blindhed",
     ],
     "right-answer": [
       "Selvkontrol, livsstil, holdninger, køn, alder, selvopfattelse, tilstandsforhold",
@@ -1564,7 +1564,7 @@ export const flashcards: Flashcard[] = [
     "wrong-answers": [
       "Køretøjets konstruktion og udstyr",
       "Personlige faktorer som selvkontrol, livsstil, holdninger",
-      "Manglende rutine og tendens til nattetilbud",
+      "Manglende rutine og tendens til natte blindhed",
     ],
     "right-answer": [
       "Evnen til at forudse og analysere risici og de deraf følgende konsekvenser",
@@ -1578,7 +1578,7 @@ export const flashcards: Flashcard[] = [
       "Evnen til at forudse og analysere risici",
       "Personlige faktorer som selvkontrol, livsstil, holdninger",
     ],
-    "right-answer": ["Manglende rutine, tendens til nattetilbud"],
+    "right-answer": ["Manglende rutine, tendens til natte blindhed"],
     id: 152,
   },
   {
@@ -1586,7 +1586,7 @@ export const flashcards: Flashcard[] = [
       "Hvad er vigtigt at vide om eget eller især lånt køretøj?",
     "wrong-answers": [
       "Evnen til at forudse og analysere risici",
-      "Manglende rutine, tendens til nattetilbud",
+      "Manglende rutine, tendens til natte blindhed",
       "Personlige faktorer som selvkontrol, livsstil, holdninger",
     ],
     "right-answer": [
