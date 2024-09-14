@@ -2315,7 +2315,6 @@ export const flashcards: Flashcard[] = [
     "question-title": "Hvad skal man altid gøre ved igangsætning fra vejkant?",
     "wrong-answers": [
       "Man skal altid tænde lyset",
-      "Man skal altid tjekke spejlene",
       "Man skal altid sige 'klar' til passagererne",
     ],
     "right-answer": ["Man skal altid give tegn"],
