@@ -2,6 +2,7 @@ export interface Flashcard {
   "question-title": string;
   "wrong-answers": string[];
   "right-answer": string[];
+  id: number;
 }
 
 export const flashcards: Flashcard[] = [
@@ -9,12 +10,14 @@ export const flashcards: Flashcard[] = [
     "question-title": "Hvem har ansvaret for, at bilen er i lovlig stand?",
     "wrong-answers": ["Føreren", "Ingen", "Passageren"],
     "right-answer": ["Ejeren eller den registrerede bruger"],
+    id: 0,
   },
   {
     "question-title":
       "Hvem har ansvaret for, at bilen er i sikkerhedsmæssig forsvarlig stand?",
     "wrong-answers": ["Ejeren", "Passageren", "Ingen"],
     "right-answer": ["Føreren"],
+    id: 1,
   },
   {
     "question-title":
@@ -23,6 +26,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Styreapparat, bremser, lygter og lydsignalapparat (hornet)",
     ],
+    id: 2,
   },
   {
     "question-title":
@@ -33,6 +37,7 @@ export const flashcards: Flashcard[] = [
       "At køretøjet har en god brændstoføkonomi",
     ],
     "right-answer": ["At køretøjet er i lovlig stand"],
+    id: 3,
   },
   {
     "question-title": "Hvordan skal styreapparatet være indrettet?",
@@ -42,6 +47,7 @@ export const flashcards: Flashcard[] = [
       "Så bilen kan styres med besvær og fare",
     ],
     "right-answer": ["Så bilen kan styres let, sikkert og hurtigt"],
+    id: 4,
   },
   {
     "question-title":
@@ -54,6 +60,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Væsentligt slør i styreapparatet som helhed eller i dets enkelte dele",
     ],
+    id: 5,
   },
   {
     "question-title":
@@ -66,6 +73,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Rattet skal let kunne drejes fra side til side uden at møde uøvet modstand",
     ],
+    id: 6,
   },
   {
     "question-title": "Hvad kan mærkbar eller synlig rykning skyldes?",
@@ -77,6 +85,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Manglende væske på servobeholderen, slidt eller fejl i driften til servostyringen eller fejl i det elektriske servostyringssystem",
     ],
+    id: 7,
   },
   {
     "question-title": "Hvad kan være tegn på slør i styreforbindelser?",
@@ -86,6 +95,7 @@ export const flashcards: Flashcard[] = [
       "Hjulene følger rettets bevægelser med forsinkelse",
     ],
     "right-answer": ["Såfremt hjulene ikke straks følger rettets bevægelser"],
+    id: 8,
   },
   {
     "question-title": "Hvornår skal styreapparatet efterses?",
@@ -97,6 +107,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Hvis der er for lidt væske i servosystemet, eller hvis der er væsentligt ratslør",
     ],
+    id: 9,
   },
   {
     "question-title":
@@ -107,6 +118,7 @@ export const flashcards: Flashcard[] = [
       "Bilen har brug for nye dæk",
     ],
     "right-answer": ["Den ene bremseskræds er defekt"],
+    id: 10,
   },
   {
     "question-title":
@@ -117,6 +129,7 @@ export const flashcards: Flashcard[] = [
       "Køre bilen hurtigt for at genstarte systemet",
     ],
     "right-answer": ["Kun kørsel til nærmeste værksted er tilladt"],
+    id: 11,
   },
   {
     "question-title":
@@ -129,6 +142,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Fejl i bremsesystemet eller fugt eller snavs på bremsebelægningerne",
     ],
+    id: 12,
   },
   {
     "question-title":
@@ -139,6 +153,7 @@ export const flashcards: Flashcard[] = [
       "Kør bilen hurtigt for at genopbygge trykket i bremsesystemet",
     ],
     "right-answer": ["Bremser skal umiddelbart efterses"],
+    id: 13,
   },
   {
     "question-title":
@@ -151,6 +166,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Der kan være fejl i ESC-systemet, og bilfabrikantens anvisninger skal følges",
     ],
+    id: 14,
   },
   {
     "question-title": "Hvilke lygter og reflekser er påbudt på en bil?",
@@ -162,6 +178,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "To lygter med fjernlys, to lygter med nærlys, to lygter med positionslys, to lygter med baglys, tre lygter med stoplys, mindst én nummerpladelygte, to blinklygter foran og bag på bilen samt én på hver side af bilen",
     ],
+    id: 15,
   },
   {
     "question-title": "Hvordan skal de bagudvendende reflekser på en bil være?",
@@ -173,6 +190,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Der skal være to røde godkendte og mærkede bagudvendende reflekser, og de må ikke være trekantede",
     ],
+    id: 16,
   },
   {
     "question-title": "Hvad er kravet til antallet af stoplygter på en bil?",
@@ -184,32 +202,38 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Der skal være tre lygter med stoplys, men ældre biler kan nøjes med to stoplygter",
     ],
+    id: 17,
   },
   {
     "question-title":
       "Hvor langt skal forlygternes fjernlys kunne oplyse vejen foran bilen?",
     "wrong-answers": ["30 m", "300 m"],
     "right-answer": ["100 m"],
+    id: 18,
   },
   {
     "question-title": "Hvad skal alle lygter og reflekser på en bil være?",
     "wrong-answers": ["Beskidte og beskadigede", "Halvt ødelagte og snavsede"],
     "right-answer": ["Hele, rene og ubeskadigede"],
+    id: 19,
   },
   {
     "question-title": "Hvilken farve skal forlygternes lys være?",
     "wrong-answers": ["Blåt eller grønt", "Rødt eller lilla"],
     "right-answer": ["Hvidt eller gulligt"],
+    id: 20,
   },
   {
     "question-title": "Hvordan skal pærer være monteret?",
     "wrong-answers": ["Skævt", "Løst"],
     "right-answer": ["Korrekt"],
+    id: 21,
   },
   {
     "question-title": "Hvilken farve skal baglygternes lys være?",
     "wrong-answers": ["Hvidt", "Gult"],
     "right-answer": ["Rødt"],
+    id: 22,
   },
   {
     "question-title":
@@ -221,6 +245,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Godkendte og mærkede gule sidereflekser og sidemarkeringslygter",
     ],
+    id: 23,
   },
   {
     "question-title":
@@ -232,6 +257,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Blinklygterne blinker væsentligt hurtigere end sædvanligt",
     ],
+    id: 24,
   },
   {
     "question-title":
@@ -241,11 +267,13 @@ export const flashcards: Flashcard[] = [
       "Halvt ødelagte og kun nogle skal kunne lyse",
     ],
     "right-answer": ["Hele og rene, og alle lygter skal kunne lyse"],
+    id: 25,
   },
   {
     "question-title": "Hvordan skal hornet lyde?",
     "wrong-answers": ["En skiftende tone", "En svag, ustabil tone"],
     "right-answer": ["En klar, konstant tone"],
+    id: 26,
   },
   {
     "question-title":
@@ -257,6 +285,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Det kan medføre, at kulilte, som er lugtfri og farlig selv i små mængder, trænger ind i bilen",
     ],
+    id: 27,
   },
   {
     "question-title":
@@ -266,6 +295,7 @@ export const flashcards: Flashcard[] = [
       "Det kan medføre kulilteforgiftning",
     ],
     "right-answer": ["Det kan medføre, at motoren beskadiges"],
+    id: 28,
   },
   {
     "question-title": "Hvad tyder sort udstødningsrøg på?",
@@ -276,6 +306,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Sort udstødningsrøg tyder på dårlig forbrænding og er tegn på fejl",
     ],
+    id: 29,
   },
   {
     "question-title": "Hvad tyder støj i unormalt omfang ved gasgivning på?",
@@ -286,6 +317,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Støj i unormalt omfang ved gasgivning tyder på fejl i udstødningssystemet",
     ],
+    id: 30,
   },
   {
     "question-title":
@@ -297,6 +329,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Motoropspænding, uden at hastigheden under kørslen forøges, tyder på fejl i kobling",
     ],
+    id: 31,
   },
   {
     "question-title":
@@ -308,6 +341,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Vanskelig gearskiftning med kraftige mislyde tyder på fejl i gear eller kobling",
     ],
+    id: 32,
   },
   {
     "question-title":
@@ -319,6 +353,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Langsom bevægelse af bilen i 1. gear, selv om koblingspedalen er trådt i bund, tyder på fejl i koblingen",
     ],
+    id: 33,
   },
   {
     "question-title":
@@ -330,6 +365,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Føreren af et motordrevet køretøj skal til enhver tid være opmærksom på, at køretøjet er i lovlig stand, for så vidt angår køretøjets afgivelser af støj, og for så vidt angår forhold ved køretøjets motor og køretøjets forureningsbegrænsende udstyr, der har betydning for det motordrevne køretøjs udledning af luftforurenende stoffer",
     ],
+    id: 34,
   },
   {
     "question-title": "Hvornår bør motoren startes?",
@@ -340,6 +376,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Motoren bør først startes, umiddelbart før man skal køre",
     ],
+    id: 35,
   },
   {
     "question-title":
@@ -349,11 +386,13 @@ export const flashcards: Flashcard[] = [
       "Man bør køre med høj musik",
     ],
     "right-answer": ["Man bør ikke lade motoren gå i tomgang i længere tid"],
+    id: 36,
   },
   {
     "question-title": "Hvad har stor betydning for energiforbruget?",
     "wrong-answers": ["Bilens farve", "Antallet af passagerer i bilen"],
     "right-answer": ["Køremåden"],
+    id: 37,
   },
   {
     "question-title": "Hvordan kan energiforbruget reduceres ved standsning?",
@@ -364,6 +403,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Hvis motoren slukkes automatisk i forbindelse med standsning (fx ved rødt lys mv.)",
     ],
+    id: 38,
   },
   {
     "question-title": "Hvad forstås ved energirigtig køreteknik?",
@@ -374,6 +414,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "At man generelt undlader unødvendige og gentagne hastighedsændringer",
     ],
+    id: 39,
   },
   {
     "question-title":
@@ -382,11 +423,13 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ved at slippe speederen helt og så vidt muligt undgå at koble ud",
     ],
+    id: 40,
   },
   {
     "question-title": "Hvad forøger energiforbruget?",
     "wrong-answers": ["Kørsel med tom tank", "Kørsel med åbne vinduer"],
     "right-answer": ["Kørsel med unødig vægt i bilen"],
+    id: 41,
   },
   {
     "question-title": "Hvordan påvirker dæktrykket energiforbruget?",
@@ -395,6 +438,7 @@ export const flashcards: Flashcard[] = [
       "Dæktrykket har ingen indflydelse på energiforbruget",
     ],
     "right-answer": ["Ved kørsel med for lavt dæktryk stiger energiforbruget"],
+    id: 42,
   },
   {
     "question-title":
@@ -406,6 +450,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ved kørsel med tændt aircondition eller klimaanlæg og andet elforbrugende udstyr stiger energiforbruget",
     ],
+    id: 43,
   },
   {
     "question-title": "Hvordan kan energiforbruget reduceres?",
@@ -414,28 +459,33 @@ export const flashcards: Flashcard[] = [
       "Ved at køre med kraftige accelerationer",
     ],
     "right-answer": ["Hvis man undgår korte og unødvendige køreture"],
+    id: 44,
   },
   {
     "question-title": "Hvad skal dæk, fælge og hjuldele være?",
     "wrong-answers": ["Beskadigede", "Forskellige fra hinanden"],
     "right-answer": ["Ubeskadigede"],
+    id: 45,
   },
   {
     "question-title":
       "Hvilken type dæk skal en personbil med tilladt totalvægt på højst 3.500 kg og varebil med tilladt totalvægt på højst 3.000 kg være forsynet med?",
     "wrong-answers": ["Dæk af forskellige typer på alle hjul", "Terrændæk"],
     "right-answer": ["Dæk af samme type på alle hjul"],
+    id: 46,
   },
   {
     "question-title": "Hvordan opdeles dæk i typer?",
     "wrong-answers": ["Efter mærke", "Efter pris"],
     "right-answer": ["Efter opbygning og anvendelseskategori"],
+    id: 47,
   },
   {
     "question-title":
       "Hvad skal dækkets oppumpningstryk være i overensstemmelse med?",
     "wrong-answers": ["Dækfabrikantens anbefalinger", "Bilistens præference"],
     "right-answer": ["Køretøjsfabrikantens foreskrifter"],
+    id: 48,
   },
   {
     "question-title": "Hvad tyder ujævnt/skævt slid på dæk på?",
@@ -446,17 +496,20 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "fejl i dæktryk, hjul eller hjulindstilling, bremser eller støddæmpere.",
     ],
+    id: 49,
   },
   {
     "question-title":
       "Hvad kan en unormal tendens til over- eller understyring af bilen tyde på?",
     "wrong-answers": ["At bilens rat er løst", "At bilens tænding er defekt"],
     "right-answer": ["Forkert dæktryk"],
+    id: 50,
   },
   {
     "question-title": "Hvad kan knirkende lyde under kørselen tyde på?",
     "wrong-answers": ["Fejl i motoren", "Fejl i udstødningssystemet"],
     "right-answer": ["Fejl i hjulophæng, herunder fjedre eller støddæmpere"],
+    id: 51,
   },
   {
     "question-title": "Hvad kan ujævnt/skævt slid på dæk være tegn på?",
@@ -465,6 +518,7 @@ export const flashcards: Flashcard[] = [
       "At dækkene er af forkert type",
     ],
     "right-answer": ["Forskellige fejl ved køretøjet"],
+    id: 52,
   },
   {
     "question-title": "Hvad kan forkert dæktryk vise sig ved?",
@@ -475,22 +529,26 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ujævnt/skævt slid på dæk, skævtrækning under let opbremsning eller unormal over- og understyring",
     ],
+    id: 53,
   },
   {
     "question-title":
       "Hvilket udstyr skal bilen normalt være forsynet med på alle siddepladser?",
     "wrong-answers": ["Airbags", "Hovedstøtter"],
     "right-answer": ["Sikkerhedsseler"],
+    id: 54,
   },
   {
     "question-title": "Hvordan skal sikkerhedsselerne i bilen være?",
     "wrong-answers": ["Med automatisk stramning", "Med dobbelt låsning"],
     "right-answer": ["Uden beskadigelser"],
+    id: 55,
   },
   {
     "question-title": "Hvad må bilens påbudte midterspejl ikke?",
     "wrong-answers": ["Være beskidt", "Være beskadiget"],
     "right-answer": ["Fjernes, hvis sidepladsen benyttes"],
+    id: 56,
   },
   {
     "question-title": "Hvad skal bilen være forsynet med?",
@@ -501,16 +559,19 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Indvendigt forspejl og et udvendigt forspejl i venstre side",
     ],
+    id: 57,
   },
   {
     "question-title": "Hvordan skal spejlene i bilen være?",
     "wrong-answers": ["Store og runde", "Med anti-blænd funktion"],
     "right-answer": ["Rene og ubeskadigede"],
+    id: 58,
   },
   {
     "question-title": "Hvad bør man medbringe under kørsel?",
     "wrong-answers": ["En godkendt brandslukker", "En førstehjælpskasse"],
     "right-answer": ["En godkendt advarselstrekant"],
+    id: 59,
   },
   {
     "question-title": "Hvad er et tegn på fejl i visker eller vasker?",
@@ -519,11 +580,13 @@ export const flashcards: Flashcard[] = [
       "Viskerne laver en skurrende lyd",
     ],
     "right-answer": ["Forruden kan ikke holdes ren"],
+    id: 60,
   },
   {
     "question-title": "Hvad skal man kunne kontrollere i bilen?",
     "wrong-answers": ["Oliemængden", "Bremsevæsken"],
     "right-answer": ["At sprinklervæske er påfyldt i tilstrækkelig mængde"],
+    id: 61,
   },
   {
     "question-title": "Hvad skal viskerne i bilen kunne?",
@@ -532,6 +595,7 @@ export const flashcards: Flashcard[] = [
       "Køre automatisk når det regner",
     ],
     "right-answer": ["Holde forruden ren"],
+    id: 62,
   },
   {
     "question-title": "Hvad er nødvendigt for at en bil kan anvendes?",
@@ -543,6 +607,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Den skal være registreret, og der skal være udstedt en registreringsattest",
     ],
+    id: 63,
   },
   {
     "question-title": "Hvad fremgår af en registreringsattest?",
@@ -554,6 +619,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Bilens egenvægt/køreklar vægt, dens tilladte totalvægt samt vægten af eventuelt påhængskøretøj, der må kobles til den",
     ],
+    id: 64,
   },
   {
     "question-title":
@@ -564,6 +630,7 @@ export const flashcards: Flashcard[] = [
       "Om bilen har en gyldig synsrapport",
     ],
     "right-answer": ["Om bil og påhængskøretøj må sammenkobles"],
+    id: 65,
   },
   {
     "question-title": "Hvad skal medbringes ved kørsel med påhængskøretøj?",
@@ -573,6 +640,7 @@ export const flashcards: Flashcard[] = [
       "Bilens forsikringsoplysninger",
     ],
     "right-answer": ["Bilens og påhængskøretøjets registreringsattester"],
+    id: 66,
   },
   {
     "question-title": "Hvad skal medbringes ved kørsel i Danmark?",
@@ -582,11 +650,13 @@ export const flashcards: Flashcard[] = [
       "Bilens forsikringsoplysninger",
     ],
     "right-answer": ["Kopier af registreringsattester kan medbringes"],
+    id: 67,
   },
   {
     "question-title": "Hvad afhænger køretøjets styreegenskaber især af?",
     "wrong-answers": ["Motorens størrelse", "Hjulenes størrelse"],
     "right-answer": ["Vægtens fordeling på forhjul og baghjul"],
+    id: 68,
   },
   {
     "question-title":
@@ -598,6 +668,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Gør køretøjet meget styrevilligt (overstyringstendens) og mindre sidevindsfølsomt",
     ],
+    id: 69,
   },
   {
     "question-title":
@@ -609,12 +680,14 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Gør køretøjet mindre styrevilligt (understyringstendens) og mindre sidevindsfølsomt og dermed mere retningsstabilt",
     ],
+    id: 70,
   },
   {
     "question-title":
       "Hvad sker der med køretøjets styreegenskaber ved belastning?",
     "wrong-answers": ["De påvirkes ikke", "De bliver mindre udtalte"],
     "right-answer": ["Disse tendenser kan forstærkes"],
+    id: 71,
   },
   {
     "question-title": "3.1.3 Førerens orienteringsvilkår",
@@ -625,6 +698,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Anvendelse af briller eller uhensigtsmæssig hovedbeklædning, der væsentlig begrænser synsfeltet, nedsætter muligheden for at orientere sig.",
     ],
+    id: 72,
   },
   {
     "question-title": "4.1.1 Bilistens vigtigste opgaver",
@@ -635,6 +709,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Kørselsrigtighed afhænger ikke alene af den rent køretetekniske beherskelse af bilen, men i mindst lige så høj grad af måden, hvorpå føreren opfatter og bedømmer færdselsforholdene.",
     ],
+    id: 73,
   },
   {
     "question-title": "4.1.1 Bilistens vigtigste opgaver (2)",
@@ -646,6 +721,7 @@ export const flashcards: Flashcard[] = [
       "Mangelfuld opmærksomhed, fejlopfattelse og fejldømmelse spiller en væsentlig rolle ved de fleste færdselsuheld.",
       "Opfattelsen af færdselsforholdene støtter sig først og fremmest på synsindtrykkene, og føreren må derfor være særlig opmærksom på mulige øjenfejl eller svækkelse af synet.",
     ],
+    id: 74,
   },
   {
     "question-title": "Hvad tiltrækker umiddelbart opmærksomheden?",
@@ -656,6 +732,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ting eller begivenheder, der er særlig iøjnefaldende og usædvanlige, eller som føreren er særlig interesseret i",
     ],
+    id: 75,
   },
   {
     "question-title":
@@ -667,6 +744,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ved at udvide sit kendskab til færdslen, især årsager til ulykker, og dermed skærpe interessen for de enkeltheder, færdtøgen og signaler, der har betydning for sikkerheden",
     ],
+    id: 76,
   },
   {
     "question-title":
@@ -678,6 +756,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ved viden om egne begrænsninger og en sund skepsis over for pålideligheden af det, man umiddelbart opfatter i færdslen",
     ],
+    id: 77,
   },
   {
     "question-title": "Hvordan styrkes en færdelssikker holdning og adfærd?",
@@ -688,6 +767,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ved, at man som modvægt mod egne begrænsninger tilegner sig en køremåde, der giver rigelig sikkerhedsmargin under de forskellige manøvrer",
     ],
+    id: 78,
   },
   {
     "question-title": "Hvad er tilladt under kørsel?",
@@ -697,6 +777,7 @@ export const flashcards: Flashcard[] = [
       "Betjening af multimediaanlæg (radio/cd/dvd), GPS og smartphones",
     ],
     "right-answer": ["At være opmærksom på trafiksituationen"],
+    id: 79,
   },
   {
     "question-title": "Hvad kan forlænge en førers reaktionstid?",
@@ -706,6 +787,7 @@ export const flashcards: Flashcard[] = [
       "At lade en passager betjene udstyr som fx multimediaanlæg (radio/cd/dvd), GPS og smartphones",
     ],
     "right-answer": ["Anvendelse af mobiltelefon (fx samtale eller sms)"],
+    id: 80,
   },
   {
     "question-title": "Hvordan kan en fører forhindre stress-situationer?",
@@ -718,6 +800,7 @@ export const flashcards: Flashcard[] = [
       "Ved at være opmærksom på trafiksituationen og undlade at bruge telefonen",
       "Ved at afbryde samtalen, hvis den går dårligt igennem",
     ],
+    id: 81,
   },
   {
     "question-title": "Hvad kan aflede en førers opmærksomhed?",
@@ -731,6 +814,7 @@ export const flashcards: Flashcard[] = [
       "Telefonsamtaler, særligt hvis samtalen går dårligt igennem, eller hvis budskabet er kompliceret eller ubehageligt",
       "Uligevægtig sindstilstand på grund af stærk ophidselse, sorg, bekymring eller lignende",
     ],
+    id: 82,
   },
   {
     "question-title":
@@ -743,6 +827,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Tilstedeværelsen af multimediaanlæg (radio/cd/dvd), GPS og smartphones",
     ],
+    id: 83,
   },
   {
     "question-title":
@@ -752,6 +837,7 @@ export const flashcards: Flashcard[] = [
       "Ved at holde blikket fast på midterlinjen",
     ],
     "right-answer": ["Ved at se så langt frem som muligt"],
+    id: 84,
   },
   {
     "question-title":
@@ -763,6 +849,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ved at flytte blikket ind i den inderste (og mest krumme) vejkant og flytte blikket fremad gennem hele svinget",
     ],
+    id: 85,
   },
   {
     "question-title": "Hvordan skal man orientere sig ved svingning i kryds?",
@@ -773,6 +860,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Efter endt orientering afkorte blikket søge i den retning, man skal køre",
     ],
+    id: 86,
   },
   {
     "question-title": "Hvordan bedømmes afstande under ca. 50 m normalt?",
@@ -781,6 +869,7 @@ export const flashcards: Flashcard[] = [
       "De undervurderes ofte, dvs. opfattes kortere, end de i virkeligheden er",
     ],
     "right-answer": ["De bedømmes normalt nogenlunde korrekt"],
+    id: 87,
   },
   {
     "question-title": "Hvad støtter opfattelsen af afstand sig især på?",
@@ -791,6 +880,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "På det umiddelbare synsindtryk af tingens størrelse forude og til perspektivet",
     ],
+    id: 88,
   },
   {
     "question-title":
@@ -802,6 +892,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Til små køretøjer, fordi de ser ud til at være længere væk, end de i virkeligheden er, og til alle ting i usigtbart vejr, bl.a. fordi perspektivlinjerne udviskes",
     ],
+    id: 89,
   },
   {
     "question-title": "Hvad påvirker opfattelsen af ens egen hastighed?",
@@ -813,6 +904,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Støjniveauet og vibrationerne i bilen, samt synlige baggrundsholdepunkter ved vejen",
     ],
+    id: 90,
   },
   {
     "question-title":
@@ -825,6 +917,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Når man kører på en vej med få baggrundsholdepunkter, eller hvis man kører i en bil med lavt støjniveau eller god affjedring",
     ],
+    id: 91,
   },
   {
     "question-title": "Hvad er fartblindhed?",
@@ -836,6 +929,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "En udbredt tendens til at undervurdere sin hastighed, når man efter nogen tids kørsel, hvor man har vænnet sig til høj hastighed, kommer ind i et område, hvor hastigheden skal sættes ned",
     ],
+    id: 92,
   },
   {
     "question-title": "Hvordan bedømmes hastigheder under og over 50 km/t?",
@@ -847,6 +941,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Hastigheder under ca. 50 km/t bedømmes normalt nogenlunde korrekt, mens hastigheder over 50 km/t ofte undervurderes, dvs. opfattes lavere, end de i virkeligheden er",
     ],
+    id: 93,
   },
   {
     "question-title":
@@ -859,11 +954,13 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "De fleste kan ikke bedømme hastigheder blot nogenlunde korrekt på køretøjer, der er mere end 200 m væk",
     ],
+    id: 94,
   },
   {
     "question-title": "Hvad påvirker selv små mængder alkohol?",
     "wrong-answers": ["Ens syn", "Ens hørelse", "Ens smagssans"],
     "right-answer": ["Opfattelses- og reaktionsevne"],
+    id: 95,
   },
   {
     "question-title":
@@ -876,12 +973,14 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Beslutte på forhånd, om man vil køre derfra og undgå at drikke alkohol eller drikke meget lidt",
     ],
+    id: 96,
   },
   {
     "question-title":
       "Hvad er grænsen for alkoholkoncentration i blodet, før man straffes for spirituskørsel?",
     "wrong-answers": ["0,30 promille", "0,40 promille", "0,60 promille"],
     "right-answer": ["0,50 promille"],
+    id: 97,
   },
   {
     "question-title":
@@ -892,6 +991,7 @@ export const flashcards: Flashcard[] = [
       "Nej, man får kun en bøde",
     ],
     "right-answer": ["Ja"],
+    id: 98,
   },
   {
     "question-title":
@@ -904,6 +1004,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man straffes første gang med en stor bøde, og ved højere promiller idømmes man desuden fængselsstraf og bilen kan blive konfiskeret",
     ],
+    id: 99,
   },
   {
     "question-title":
@@ -916,6 +1017,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man frakendes første gang førerretten betinget, og ved højere promiller frakendes man normalt førerretten ubetinget",
     ],
+    id: 100,
   },
   {
     "question-title": "Hvad sker der i gentagelsestilfælde af spirituskørsel?",
@@ -925,6 +1027,7 @@ export const flashcards: Flashcard[] = [
       "Man får en mindre bøde",
     ],
     "right-answer": ["Sanktionerne skærpes væsentligt"],
+    id: 101,
   },
   {
     "question-title":
@@ -935,6 +1038,7 @@ export const flashcards: Flashcard[] = [
       "Et kursus i trafiksikkerhed",
     ],
     "right-answer": ["Et ANT-kursus"],
+    id: 102,
   },
   {
     "question-title":
@@ -947,6 +1051,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "At overlade bilen til en person, der har drukket så meget spiritus, at den pågældende ikke er i stand til at føre bilen på betryggende måde",
     ],
+    id: 103,
   },
   {
     "question-title": "Hvad kan politiet kræve af en bilist til enhver tid?",
@@ -956,6 +1061,7 @@ export const flashcards: Flashcard[] = [
       "At vise bilens forsikringspapirer",
     ],
     "right-answer": ["Udåndingsprøver"],
+    id: 104,
   },
   {
     "question-title":
@@ -967,6 +1073,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "De påvirker evnen til at køre bil og forøger risikoen for trafikulykker",
     ],
+    id: 105,
   },
   {
     "question-title":
@@ -978,6 +1085,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Virkningen på personen kan være uforudsigelig, men ulykkesrisikoen vil under alle omstændigheder være stærkt forøget",
     ],
+    id: 106,
   },
   {
     "question-title":
@@ -989,6 +1097,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Nej, det er ulovligt at køre bil eller blot forsøge det, hvis man har indtaget bevidsthedspåvirkende stoffer, som er farlige for færdelssikkerheden",
     ],
+    id: 107,
   },
   {
     "question-title":
@@ -997,6 +1106,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Første gang straffes man med bøde og ubetinget frakendelse af førerretten (svarende til straffen for at køre med en alkoholpromille på 1,21)",
     ],
+    id: 108,
   },
   {
     "question-title":
@@ -1006,6 +1116,7 @@ export const flashcards: Flashcard[] = [
       "Straffen forbliver den samme",
     ],
     "right-answer": ["Sanktionerne skærpes væsentligt i gentagelsestilfælde"],
+    id: 109,
   },
   {
     "question-title":
@@ -1017,6 +1128,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Nej, det er forbudt at overlade bilen til en person, der har indtaget bevidsthedspåvirkende stoffer",
     ],
+    id: 110,
   },
   {
     "question-title":
@@ -1028,6 +1140,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ja, politiet kan til enhver tid kræve, at føreren afgiver spyt- eller svedprøver eller lader sine øjne undersøge",
     ],
+    id: 111,
   },
   {
     "question-title": "Hvornår må man ikke køre bil?",
@@ -1039,6 +1152,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Hvis man er syg, træt eller har fået medicin eller er påvirket af opstemmede eller bevidsnedøvende midler",
     ],
+    id: 112,
   },
   {
     "question-title": "Hvad kan svække opfattelses- og reaktionsevnen?",
@@ -1046,11 +1160,13 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "At være syg eller have indtaget nerve- eller sovemedicin, stærke hoste- eller smertestillende midler eller medicin mod allergi, køre- og søsyge eller lignende",
     ],
+    id: 113,
   },
   {
     "question-title": "Hvad kan forstærke medicinens sløvende virkning?",
     "wrong-answers": ["At drikke te", "At læse en bog", "At lytte til musik"],
     "right-answer": ["At indtage alkohol"],
+    id: 114,
   },
   {
     "question-title":
@@ -1061,6 +1177,7 @@ export const flashcards: Flashcard[] = [
       "Med en gul stjerne",
     ],
     "right-answer": ["Med en rød trekant"],
+    id: 115,
   },
   {
     "question-title": "Hvad påvirker opfattelses- og reaktionsevnen?",
@@ -1068,6 +1185,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Både legemlig og psykisk træthed (fx stress), og man skal derfor alvorligt overveje at lade bilen stå, hvis man ikke har sovet nok om natten eller skal hjem efter en lang dag med særligt anstrengende arbejde",
     ],
+    id: 116,
   },
   {
     "question-title": "Hvad er mange bilister tilbøjelige til at overvurdere?",
@@ -1079,6 +1197,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Egne kræfter ved at køre længere strækninger på tidspunkter, hvor man plejer at slappe af, hvile eller sove",
     ],
+    id: 117,
   },
   {
     "question-title":
@@ -1089,6 +1208,7 @@ export const flashcards: Flashcard[] = [
       "Rådgive patienten om at gå mere",
     ],
     "right-answer": ["Anmelde det til myndighederne"],
+    id: 118,
   },
   {
     "question-title": "Hvornår er det forbudt at overlade bilen til en person?",
@@ -1100,6 +1220,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Hvis personen på grund af sygdom, træthed eller indtagelse af medicin eller lignende ikke er i stand til at føre bilen på fuldt betryggende måde",
     ],
+    id: 119,
   },
   {
     "question-title":
@@ -1112,6 +1233,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "De har ikke de nødvendige fysiske og psykiske forudsætninger for at færdes sikkert i trafikken.",
     ],
+    id: 120,
   },
   {
     "question-title": "Hvordan kan småbørns adfærd i trafikken beskrives?",
@@ -1123,6 +1245,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Småbørn, der tilsyneladende opfører sig forsigtigt, er alligevel upålidelige, fordi de ikke kan beherske pludselige impulser til fx at løbe over kørebanen, fordi de ikke kan bedømme farer i trafikken, og fordi de er usikre i deres bevægelser og derfor let kan snuble eller falde, når de går eller løber.",
     ],
+    id: 121,
   },
   {
     "question-title":
@@ -1135,6 +1258,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Småbørn, der færdes på egen hånd, må altid opfattes som et klart faretegn, der kræver skærpet opmærksomhed, nedsat hastighed og bremseberedskab.",
     ],
+    id: 122,
   },
   {
     "question-title":
@@ -1147,6 +1271,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Brug af horn over for småbørn skal ske med omtanke, fordi det let kan fremkalde panikreaktioner.",
     ],
+    id: 123,
   },
   {
     "question-title":
@@ -1159,11 +1284,13 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Mindre skolebørn (6-10-års-alderen) kender normalt de vigtigste færdselsregler, men har svært ved at passe på sig selv og passe på andre, også hvor andre har pligt til at holde tilbage (fx i fodgængerfelt og ved lyssignal). De har svært ved at fastholde opmærksomheden på trafikken og kan handle efter pludselige indskydelser og tilskyndelser.",
     ],
+    id: 124,
   },
   {
     "question-title": "Hvornår begynder de fleste cykeluheld at ramme børn?",
     "wrong-answers": ["1-4-års-alderen", "15-20-års-alderen"],
     "right-answer": ["5-6-års-alderen"],
+    id: 125,
   },
   {
     "question-title":
@@ -1173,6 +1300,7 @@ export const flashcards: Flashcard[] = [
       "Fordi børnene ikke er interesserede",
     ],
     "right-answer": ["Fordi underviserne kører bil"],
+    id: 126,
   },
   {
     "question-title":
@@ -1181,11 +1309,13 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "At beherske cyklen, dvs. holde balancen, styre og bremse",
     ],
+    id: 127,
   },
   {
     "question-title": "Hvad bruger børn ofte cyklen til?",
     "wrong-answers": ["At transportere ting", "At køre væddeløb"],
     "right-answer": ["At afprøve egne evner og færdigheder"],
+    id: 128,
   },
   {
     "question-title":
@@ -1194,6 +1324,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "At styre cyklen, hvis de skal se i en anden retning end kørselsretningen",
     ],
+    id: 129,
   },
   {
     "question-title":
@@ -1205,6 +1336,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Fordi de mangler erfaring og ofte har holdningsproblemer.",
     ],
+    id: 130,
   },
   {
     "question-title":
@@ -1216,6 +1348,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "At de har svært ved at vurdere færdselssituationen og hastigheder korrekt, og bedømme egne og andres manøvrer.",
     ],
+    id: 131,
   },
   {
     "question-title":
@@ -1227,6 +1360,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "For at opleve spænding, afreagere skuffelser eller hævde sig.",
     ],
+    id: 132,
   },
   {
     "question-title":
@@ -1238,6 +1372,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Fordi de ofte mangler kendskab til de mange fænomener i trafikken.",
     ],
+    id: 133,
   },
   {
     "question-title":
@@ -1247,6 +1382,7 @@ export const flashcards: Flashcard[] = [
       "De får for mange bøder.",
     ],
     "right-answer": ["Andre trafikanters manglende hensyntagen og forståelse."],
+    id: 134,
   },
   {
     "question-title": "Hvilken udfordring oplever ældre trafikanter ofte?",
@@ -1258,6 +1394,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ældre trafikanter har ofte nedsat syn og hørelse og opfatter og reagerer langsomt",
     ],
+    id: 135,
   },
   {
     "question-title": "Hvordan påvirker frygten for at falde mange ældre?",
@@ -1269,6 +1406,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Mange ældre er dårligt gående og bange for at falde og er derfor mindre opmærksomme på de kørende, når de træder på kantstenen eller er på vej over kørebanen",
     ],
+    id: 136,
   },
   {
     "question-title": "Hvordan opfatter mange ældre fodgængerfelter?",
@@ -1280,6 +1418,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Mange ældre opfatter fodgængerfelter som særligt sikre steder og undlader derfor ofte helt at se sig for, før de går over",
     ],
+    id: 137,
   },
   {
     "question-title": "Hvordan krydser mange ældre kørebanen ved lysregler?",
@@ -1291,6 +1430,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Mange ældre krydser kørebanen ved lysregler i fuld tillid til det grønne lys og uden at se sig for",
     ],
+    id: 138,
   },
   {
     "question-title":
@@ -1303,6 +1443,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Mange ældre er bange for trafikken og forskrækkes let af biler, der hastigt nærmer sig, kører tæt forbi eller bremser brat op, hvilket kan fremkalde farlige paniksituationer",
     ],
+    id: 139,
   },
   {
     "question-title":
@@ -1312,6 +1453,7 @@ export const flashcards: Flashcard[] = [
       "Man skal ignorere fejlen",
     ],
     "right-answer": ["Man skal være positiv og hjælpsom"],
+    id: 140,
   },
   {
     "question-title":
@@ -1321,6 +1463,7 @@ export const flashcards: Flashcard[] = [
       "Man skal være irriteret og utålmodig",
     ],
     "right-answer": ["Man skal være særlig hjælpsom og hensynsfuld"],
+    id: 141,
   },
   {
     "question-title":
@@ -1330,6 +1473,7 @@ export const flashcards: Flashcard[] = [
       "Man skal være irriteret og utålmodig",
     ],
     "right-answer": ["Man skal være særlig hjælpsom og hensynsfuld"],
+    id: 142,
   },
   {
     "question-title":
@@ -1339,6 +1483,7 @@ export const flashcards: Flashcard[] = [
       "Man skal ignorere deres vanskeligheder",
     ],
     "right-answer": ["Man skal være forstående"],
+    id: 143,
   },
   {
     "question-title":
@@ -1348,6 +1493,7 @@ export const flashcards: Flashcard[] = [
       "Man skal ignorere deres manglende rutine",
     ],
     "right-answer": ["Man skal være forstående"],
+    id: 144,
   },
   {
     "question-title":
@@ -1357,6 +1503,7 @@ export const flashcards: Flashcard[] = [
       "Man skal ignorere deres ønske",
     ],
     "right-answer": ["Man skal være forstående"],
+    id: 145,
   },
   {
     "question-title":
@@ -1366,6 +1513,7 @@ export const flashcards: Flashcard[] = [
       "Man skal ignorere deres forsigtighed",
     ],
     "right-answer": ["Man skal være forstående"],
+    id: 146,
   },
   {
     "question-title":
@@ -1375,6 +1523,7 @@ export const flashcards: Flashcard[] = [
       "Man skal reagere med vrede eller frustration",
     ],
     "right-answer": ["Man må aldrig lade sig påvirke/op­hidse"],
+    id: 147,
   },
   {
     "question-title":
@@ -1386,6 +1535,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man må aldrig føle sig fristet til eller lade sig provokere til at begå uforsvarlige handlinger",
     ],
+    id: 148,
   },
   {
     "question-title": "Hvordan skal man altid være i trafikken?",
@@ -1394,6 +1544,7 @@ export const flashcards: Flashcard[] = [
       "Man skal være ligeglad og uopmærksom",
     ],
     "right-answer": ["Man skal altid være forudseende og risikobevidst"],
+    id: 149,
   },
   {
     "question-title":
@@ -1406,6 +1557,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Selvkontrol, livsstil, holdninger, køn, alder, selvopfattelse, tilstandsforhold",
     ],
+    id: 150,
   },
   {
     "question-title":
@@ -1418,6 +1570,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Evnen til at forudse og analysere risici og de deraf følgende konsekvenser",
     ],
+    id: 151,
   },
   {
     "question-title": "Hvilke forhold kræver særlige forholsregler?",
@@ -1427,6 +1580,7 @@ export const flashcards: Flashcard[] = [
       "Personlige faktorer som selvkontrol, livsstil, holdninger",
     ],
     "right-answer": ["Manglende rutine, tendens til nattetilbud"],
+    id: 152,
   },
   {
     "question-title":
@@ -1439,6 +1593,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Køretøjets konstruktion, udstyr, belastning og vedligeholdelseststand",
     ],
+    id: 153,
   },
   {
     "question-title": "Hvad betyder det at være risikoblind i trafikken?",
@@ -1448,6 +1603,7 @@ export const flashcards: Flashcard[] = [
       "At man altid kører for tæt på forankørende",
     ],
     "right-answer": ["At man undervurderer risikoen i konkrete situationer"],
+    id: 154,
   },
   {
     "question-title": "Hvordan kan risikoblindhed manifestere sig?",
@@ -1462,6 +1618,7 @@ export const flashcards: Flashcard[] = [
       "At man foretager sig ting i bilen, der ikke har med kørselsopgaven at gøre, og som medfører, at man i for lange tidsrum ikke har den fornødne opmærksomhed rettet mod kørslen",
       "At man overser andre risici, fx at man er for træt eller har kørt for længe til at køre forsvarligt",
     ],
+    id: 155,
   },
   {
     "question-title": "Hvad skal man som bilist være kritisk over for?",
@@ -1473,6 +1630,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Tilskyndelsen til at køre med den maksimalt tilladte hastighed på veje med god sikkerhedsstandard uden at tage hensyn til de aktuelle færdselsforhold og til, at andre trafikanter ofte begår uventede eller overraskende fejl",
     ],
+    id: 156,
   },
   {
     "question-title": "Hvad skal man ikke overvurdere som bilist?",
@@ -1484,16 +1642,19 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Betydningen af vejtekniske sikkerhedsforanstaltninger, fordi deres virkning bl.a. afhænger af vejrforholdene og andre trafikanters adfærd, og fordi tekniske indretninger kan svigte",
     ],
+    id: 157,
   },
   {
     "question-title": "Hvilken type vej er IKKE en del af vejtyperne?",
     "wrong-answers": ["Motorvej", "Hovedvej", "Cykelgade"],
     "right-answer": ["Fodgængerzone"],
+    id: 158,
   },
   {
     "question-title": "Hvad er IKKE et område med fartdæmpning?",
     "wrong-answers": ["Gågade", "Cykelgade", "Opholds- og legeområde"],
     "right-answer": ["Motorvej"],
+    id: 159,
   },
   {
     "question-title": "Hvor gælder færdselsreglerne ifølge Færdselsloven?",
@@ -1505,6 +1666,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Færdselsreglerne gælder på alle gader og veje, cykelstier og fortove, pladser, broer og tunneler, passager, stier og lignende steder, hvor der er almindelig færdsel, hvad enten disse steder er offentlige eller private",
     ],
+    id: 160,
   },
   {
     "question-title": "Hvor må biler køre ifølge Færdselsloven?",
@@ -1516,6 +1678,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Biler må normalt kun køre på den del af vejen, der er bestemt for biler og motorcykler (motorkøretøjer) samt store knallerter",
     ],
+    id: 161,
   },
   {
     "question-title": "Hvad skal man rette sig efter ved kørslen?",
@@ -1527,6 +1690,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Færdselstavler, kørebane striber, færdselssignaler og politiets anvisninger",
     ],
+    id: 162,
   },
   {
     "question-title": "Hvornår bruges gul vejafmærkning?",
@@ -1536,12 +1700,14 @@ export const flashcards: Flashcard[] = [
       "Ved ensrettet færdsel",
     ],
     "right-answer": ["Til midlertidig regulering fx ved vejarbejde"],
+    id: 163,
   },
   {
     "question-title":
       "Hvem skal man rette sig efter, selvom færdselstavler, kørebane striber og færdselssignaler viser noget andet?",
     "wrong-answers": ["Ingen", "Andre bilister", "Færdselstavler"],
     "right-answer": ["Politiet"],
+    id: 164,
   },
   {
     "question-title": "Hvad betyder færdselstavlen 'Indkørsel forbudt'?",
@@ -1551,6 +1717,7 @@ export const flashcards: Flashcard[] = [
       "Man må køre med farligt gods",
     ],
     "right-answer": ["Indkørsel er forbudt"],
+    id: 165,
   },
   {
     "question-title":
@@ -1561,6 +1728,7 @@ export const flashcards: Flashcard[] = [
       "Man må køre med farligt gods",
     ],
     "right-answer": ["Kørsel i begge retninger er forbudt"],
+    id: 166,
   },
   {
     "question-title": "Hvad betyder færdselstavlen 'Ensrettet færdsel'?",
@@ -1570,6 +1738,7 @@ export const flashcards: Flashcard[] = [
       "Kørsel med farligt gods er forbudt",
     ],
     "right-answer": ["Færdsel er kun tilladt i én retning"],
+    id: 167,
   },
   {
     "question-title":
@@ -1580,6 +1749,7 @@ export const flashcards: Flashcard[] = [
       "Kørsel i begge retninger er forbudt",
     ],
     "right-answer": ["Disse køretøjer har ikke tilladelse til at køre her"],
+    id: 168,
   },
   {
     "question-title":
@@ -1590,6 +1760,7 @@ export const flashcards: Flashcard[] = [
       "Kørsel i begge retninger er forbudt",
     ],
     "right-answer": ["Kørsel med farligt gods er forbudt"],
+    id: 169,
   },
   {
     "question-title": "Hvordan kan færdselsatver være angivet?",
@@ -1599,6 +1770,7 @@ export const flashcards: Flashcard[] = [
       "Kun på forbudstavler",
     ],
     "right-answer": ["På orienteringstavler"],
+    id: 170,
   },
   {
     "question-title": "Hvordan kan variable færdselsatver være sammensat?",
@@ -1608,6 +1780,7 @@ export const flashcards: Flashcard[] = [
       "Kun af advarselstavler",
     ],
     "right-answer": ["Af lyskilder eller lameller"],
+    id: 171,
   },
   {
     "question-title":
@@ -1618,6 +1791,7 @@ export const flashcards: Flashcard[] = [
       "Som undertavler",
     ],
     "right-answer": ["Som variable færdselsatver"],
+    id: 172,
   },
   {
     "question-title": "Hvordan opbygges midlertidige færdselsatver?",
@@ -1629,6 +1803,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Af den aktuelle hovedtavle og evt. undertavle sat på en gul baggrundsplade med sort kant",
     ],
+    id: 173,
   },
   {
     "question-title":
@@ -1639,6 +1814,7 @@ export const flashcards: Flashcard[] = [
       "Som hovedtavler",
     ],
     "right-answer": ["Som midlertidige færdselsatver"],
+    id: 174,
   },
   {
     "question-title": "Hvad giver kørekortkategori B ret til at føre?",
@@ -1650,6 +1826,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Personbil og varebil på ikke over 3.500 kg tilladt totalvægt. Personbilen må højst være indrettet til befordring af 8 personer foruden føreren.",
     ],
+    id: 175,
   },
   {
     "question-title":
@@ -1662,6 +1839,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Bil med tilkoblet påhængskøretøj med tilladt totalvægt på ikke over 750 kg.",
     ],
+    id: 176,
   },
   {
     "question-title":
@@ -1674,6 +1852,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "3-hjulet motorcykel, 3-hjulet bil, ATV, traktor, motorredskab samt lille og stor knallert.",
     ],
+    id: 177,
   },
   {
     "question-title": "Hvad er en af grundreglerne for færdslen?",
@@ -1685,6 +1864,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man skal altid køre hensynsfuldt og agtpågivende, så der ikke opstår fare eller forvolder skade eller ulempe for andre, og således at færdslen ikke unødigt hindres eller forstyrres",
     ],
+    id: 178,
   },
   {
     "question-title":
@@ -1697,6 +1877,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man skal også vise hensyn over for dem, der bor eller opholder sig ved vejen",
     ],
+    id: 179,
   },
   {
     "question-title":
@@ -1709,6 +1890,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man skal vise særligt hensyn over for børn, skolepatruljer, ældre mennesker og handicappede",
     ],
+    id: 180,
   },
   {
     "question-title": "Hvornår skal man gøre opmærksom på en fare?",
@@ -1718,6 +1900,7 @@ export const flashcards: Flashcard[] = [
       "Når man kører over for rødt",
     ],
     "right-answer": ["Når det er nødvendigt at advare om en fare"],
+    id: 181,
   },
   {
     "question-title": "Hvordan skal man advare om en fare?",
@@ -1729,12 +1912,14 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ved kortvarigt brug af hornet eller ved at blinke med forlygterne",
     ],
+    id: 182,
   },
   {
     "question-title":
       "Hvad skal man bruge i lygteændingstiden til at advare om fare?",
     "wrong-answers": ["Lydsignal", "Håndsignal", "Bremselyset"],
     "right-answer": ["Lyssignal"],
+    id: 183,
   },
   {
     "question-title": "Hvornår må man bruge hornet?",
@@ -1744,6 +1929,7 @@ export const flashcards: Flashcard[] = [
       "Når man kører i en tunnel",
     ],
     "right-answer": ["Når det er nødvendigt at advare om en fare"],
+    id: 184,
   },
   {
     "question-title":
@@ -1756,6 +1942,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Før igangsætning fra kørebanekant, før vending og før svingning",
     ],
+    id: 185,
   },
   {
     "question-title": "Hvornår skal man på motorvej altid give tegn?",
@@ -1767,6 +1954,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Før vognbaneskift og ved anden ikke ubetydelig ændring af bilens placering til siden, herunder ved til- og frakørsel",
     ],
+    id: 186,
   },
   {
     "question-title":
@@ -1777,6 +1965,7 @@ export const flashcards: Flashcard[] = [
       "Før igangsætning fra kørebanekant, før vending og før svingning",
     ],
     "right-answer": ["Ved standsning eller hurtig nedsættelse af hastigheden"],
+    id: 187,
   },
   {
     "question-title":
@@ -1789,6 +1978,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ved ventet kødanelse eller anden umiddelbar fare på motorvej. På andre veje inden for tættere bebygget område kan det også anvendes",
     ],
+    id: 188,
   },
   {
     "question-title":
@@ -1799,6 +1989,7 @@ export const flashcards: Flashcard[] = [
       "Før igangsætning fra kørebanekant, før vending og før svingning",
     ],
     "right-answer": ["Når en manøvre er afsluttet"],
+    id: 189,
   },
   {
     "question-title": "Hvornår skal man anvende nærlys?",
@@ -1808,11 +1999,13 @@ export const flashcards: Flashcard[] = [
       "Når det er solopgang",
     ],
     "right-answer": ["Under lygteændingstiden"],
+    id: 190,
   },
   {
     "question-title": "Hvad kan anvendes i stedet for nærlys?",
     "wrong-answers": ["Langlys", "Ingen lys", "Blinklys"],
     "right-answer": ["Særligt køretøjets tågeforlys"],
+    id: 191,
   },
   {
     "question-title": "Hvem skal man give fri passage?",
@@ -1824,6 +2017,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Grupper af børn under opsyn af en leder, forsvarets og redningsberedskabets kolonner, ligtog og andre sluttede optog",
     ],
+    id: 192,
   },
   {
     "question-title": "Hvad skal man gøre, når køretøjer er under udrykning?",
@@ -1833,6 +2027,7 @@ export const flashcards: Flashcard[] = [
       "Ignorere dem",
     ],
     "right-answer": ["Holde vejen åben og om nødvendigt standse"],
+    id: 193,
   },
   {
     "question-title": "Hvad må man ikke gøre ved et uheldssted?",
@@ -1844,30 +2039,35 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Køre så tæt på et uheldssted, at man er i vejen for redningsarbejdet",
     ],
+    id: 194,
   },
   {
     "question-title":
       "Hvad er den maksimale bredde en bil må være med eller uden læs?",
     "wrong-answers": ["2,75 m", "2,45 m"],
     "right-answer": ["2,55 m"],
+    id: 195,
   },
   {
     "question-title":
       "Hvad er den maksimale længde en bil må være med eller uden læs?",
     "wrong-answers": ["12,5 m", "11,5 m"],
     "right-answer": ["12 m"],
+    id: 196,
   },
   {
     "question-title":
       "Hvad er den maksimale højde en bil må være med eller uden læs?",
     "wrong-answers": ["4,5 m", "3,5 m"],
     "right-answer": ["4 m"],
+    id: 197,
   },
   {
     "question-title":
       "Hvem har ansvaret for, at passagerer under 15 år anvender sikkerhedsseler eller andet sikkerhedsudstyr?",
     "wrong-answers": ["Passagererne selv", "Bilens ejer"],
     "right-answer": ["Føreren af bilen"],
+    id: 198,
   },
   {
     "question-title":
@@ -1876,6 +2076,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Barnestol eller andet godkendt sikkerhedsudstyr tilpasset barnets højde og vægt",
     ],
+    id: 199,
   },
   {
     "question-title":
@@ -1884,6 +2085,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Barnestol eller andet godkendt sikkerhedsudstyr, tilpasset barnets højde og vægt",
     ],
+    id: 200,
   },
   {
     "question-title":
@@ -1895,6 +2097,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Advarselsmærkning mod bagudvendte barnestol ved sæder, bortset fra forsæder, hvor der er monteret airbag, medmindre pågældende airbag automatisk træder ud af funktion, når bagudvendte barnestol monteres",
     ],
+    id: 201,
   },
   {
     "question-title": "Hvordan skal nakkestøtten indstilles?",
@@ -1904,6 +2107,7 @@ export const flashcards: Flashcard[] = [
       "Nakkestøtten behøver ikke at blive indstillet.",
     ],
     "right-answer": ["Nakkestøtten skal være afpasset af den enkelte bruger."],
+    id: 202,
   },
   {
     "question-title": "Hvordan skal gods være anbragt i bilen?",
@@ -1915,6 +2119,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Gods skal være anbragt, så det ikke dækker blinklys, lygter og nummerplade, og så det ikke støjer unødigt. Gods skal være anbragt, så det ikke er til fare for føreren eller andre under kørslen. Gods skal være anbragt, så det ikke hindrer kørslen eller vælte ud.",
     ],
+    id: 203,
   },
   {
     "question-title": "Hvordan skal gods sikres i bilen?",
@@ -1924,6 +2129,7 @@ export const flashcards: Flashcard[] = [
       "Gods skal sikres med en særlig godssikringsanordning.",
     ],
     "right-answer": ["Gods skal sikres mod fremadskridning ved opbremsning."],
+    id: 204,
   },
   {
     "question-title": "Hvordan skal forskelligt gods placeres i bilen?",
@@ -1935,6 +2141,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ved læsning af forskelligt gods er hovedreglen, at tungeste placeres nederst og så langt fremme som muligt.",
     ],
+    id: 205,
   },
   {
     "question-title": "Hvordan skal gods, der rager ud over bilen, afmærkes?",
@@ -1946,6 +2153,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Gods, der rager mere end 1 m ud over bilens forreste eller bagerste punkt eller mere end 15 cm ud over siderne, skal afmærkes med en klud eller på anden tydelig måde. Ved erhvervsmæssig transport skal godset dog afmærkes med en hvid cylinder, der er 30 cm høj og med en diameter på 10 cm. Cylinderen skal være forsynet med 2 røde refleksbånd. I lygtetændingstiden skal godset, uanset privat eller erhvervsmæssig transport, afmærkes med nævnte cylinder samt rødt lys bagud og hvidt lys fremad.",
     ],
+    id: 206,
   },
   {
     "question-title":
@@ -1956,6 +2164,7 @@ export const flashcards: Flashcard[] = [
       "Man skal tænde havariblinket og vente på hjælp",
     ],
     "right-answer": ["Man skal snarest muligt flytte bilen væk fra stedet"],
+    id: 207,
   },
   {
     "question-title": "Hvad skal man gøre ved uventet kødanelse på motorveje?",
@@ -1967,6 +2176,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man skal anvende havariblink for at henlede andre trafikanters opmærksomhed på faren",
     ],
+    id: 208,
   },
   {
     "question-title": "Hvornår er brug af havariblink forbudt?",
@@ -1978,6 +2188,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Brug af havariblink i andre tilfælde end nødsituationer er forbudt",
     ],
+    id: 209,
   },
   {
     "question-title":
@@ -1988,6 +2199,7 @@ export const flashcards: Flashcard[] = [
       "Man skal prøve at skubbe bilen over skinnerne",
     ],
     "right-answer": ["Man skal, så godt man kan, advare lokoføreren om faren"],
+    id: 210,
   },
   {
     "question-title": "Hvad er reglerne for at slæbe en havareret bil?",
@@ -1999,6 +2211,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Slæbningen skal ske ved hjælp af et solidt tov, en stangforbindelse eller lignende og således at afstanden mellem køretøjerne højst er 4 m. Hastigheden må højst være 30 km/t",
     ],
+    id: 211,
   },
   {
     "question-title": "Hvornår er slæbning forbudt?",
@@ -2010,6 +2223,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Slæbning er forbudt, hvis det slæbte køretøjs bremser eller styreapparat ikke er i forskriftsmæssig stand, og man må da overlade slæbningen til et godkendt bjærgningskøretøj eller lignende. Slæbning på motorvej må kun udføres med et godkendt bjærgningskøretøj",
     ],
+    id: 212,
   },
   {
     "question-title":
@@ -2022,6 +2236,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man skal foretage opkald til alarmcentralen og oplyse om ulykken og eventuelle farer",
     ],
+    id: 213,
   },
   {
     "question-title":
@@ -2034,6 +2249,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man skal straks bringe afmærkningen i orden igen, hvis det er muligt. Hvis ikke, skal man underrette politiet",
     ],
+    id: 214,
   },
   {
     "question-title":
@@ -2046,6 +2262,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man skal straks standse og hjælpe tilskadekomne, og oplyse navn og adresse til andre indblandede",
     ],
+    id: 215,
   },
   {
     "question-title":
@@ -2058,6 +2275,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man skal melde det til politiet og ikke ændre på forholdene eller fjerne spor på ulykkesstedet",
     ],
+    id: 216,
   },
   {
     "question-title":
@@ -2068,6 +2286,7 @@ export const flashcards: Flashcard[] = [
       "Man skal kontakte ejeren og forhandle om kompensation",
     ],
     "right-answer": ["Man skal underrette skadelidte eller politiet herom"],
+    id: 217,
   },
   {
     "question-title":
@@ -2079,6 +2298,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Ejeren af køretøjet eller den person (brugeren), der har varig rådighed over køretøjet",
     ],
+    id: 218,
   },
   {
     "question-title":
@@ -2090,6 +2310,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Nej, det er forbudt at overlade føringen af et køretøj til personer, der ikke er i besiddelse af et gyldigt kørekort til denne",
     ],
+    id: 219,
   },
   {
     "question-title": "Hvad skal man altid gøre ved igangsætning fra vejkant?",
@@ -2099,6 +2320,7 @@ export const flashcards: Flashcard[] = [
       "Man skal altid sige 'klar' til passagererne",
     ],
     "right-answer": ["Man skal altid give tegn"],
+    id: 220,
   },
   {
     "question-title": "Hvad er bremselængden?",
@@ -2110,6 +2332,7 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Det er det stykke vej, bilen kører, fra bremsningen påbegyndes, og indtil bilen står stille",
     ],
+    id: 221,
   },
   {
     "question-title": "Hvad afhænger bremselængden af?",
@@ -2117,12 +2340,14 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Bilens hastighed samt hvor hårdt man træder på bremsepedalen",
     ],
+    id: 222,
   },
   {
     "question-title":
       "Hvad sker der med bremselængden, hvis man fordobler hastigheden?",
     "wrong-answers": ["Den halveres", "Den fordobles", "Den tredobles"],
     "right-answer": ["Den firedobles"],
+    id: 223,
   },
   {
     "question-title":
@@ -2135,5 +2360,6 @@ export const flashcards: Flashcard[] = [
     "right-answer": [
       "Man skal køre forbi til højre, medmindre andet er vist ved afmærkning, eller vejen er ensrettet",
     ],
+    id: 224,
   },
 ];

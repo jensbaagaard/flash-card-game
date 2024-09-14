@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { flashcards } from "../flashcards";
-
-interface Flashcard {
-  "question-title": string;
-  "wrong-answers": string[];
-  "right-answer": string[];
-}
+import { flashcards, Flashcard } from "../flashcards";
 
 function scrambleArray(array: any[], value: string) {
   const scrambledArray = [...array];
@@ -37,22 +31,18 @@ export const Game: React.FC = () => {
   };
 
   const getNextCardIndex = () => {
-    // Get the remaining unseen cards
     const unseenCards = flashcards
       .map((_, index) => index)
       .filter((index) => !seenCards.includes(index));
 
-    // If all cards have been seen, reset the seenCards array
     if (unseenCards.length === 0) {
       setSeenCards([]);
       return Math.floor(Math.random() * flashcards.length);
     }
 
-    // Select a random unseen card
     const randomUnseenIndex =
       unseenCards[Math.floor(Math.random() * unseenCards.length)];
 
-    // Add this card to the seenCards list
     setSeenCards([...seenCards, randomUnseenIndex]);
 
     return randomUnseenIndex;
