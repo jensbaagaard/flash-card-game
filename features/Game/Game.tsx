@@ -72,7 +72,9 @@ export const Game: React.FC = () => {
         }}
       >
         <h3 style={{ color: "gray" }}>#{currentCardIndex}</h3>
-        <h2>{currentCard["question-title"]}</h2>
+        <h2 style={{ padding: "0 8px 0 8px" }}>
+          {currentCard["question-title"]}
+        </h2>
         {shuffledAnswers.map((answer) => (
           <button
             key={answer}
