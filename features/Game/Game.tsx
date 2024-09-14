@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { flashcards, Flashcard } from "../flashcards";
+import { getGameData, setGameData } from "../api";
 
 function scrambleArray(array: any[], value: string) {
   const scrambledArray = [...array];
@@ -18,16 +19,25 @@ export const Game: React.FC = () => {
   const currentCard: Flashcard = flashcards[currentCardIndex];
 
   useEffect(() => {
+    (async () => {
+      const gameData = await getGameData();
+      console.log({ gameData });
+      setSeenCards(gameData.seenCards);
+    })();
+  }, []);
+
+  useEffect(() => {
     const shuffled = scrambleArray(
       currentCard["wrong-answers"],
       currentCard["right-answer"][0]
     );
     setShuffledAnswers(shuffled);
-  }, [currentCardIndex]); // Reshuffle answers whenever the card changes
+  }, [currentCardIndex]);
 
   const handleAnswerClick = (answer: string) => {
     setSelectedAnswer(answer);
     setShowResult(true);
+    setGameData({ seenCards: [...seenCards] });
   };
 
   const getNextCardIndex = () => {
@@ -47,6 +57,11 @@ export const Game: React.FC = () => {
 
     return randomUnseenIndex;
   };
+
+  function resetGame() {
+    setSeenCards([]);
+    setGameData({ seenCards: [] });
+  }
 
   const handleNextCard = () => {
     setSelectedAnswer(null);
@@ -71,8 +86,7 @@ export const Game: React.FC = () => {
           flexDirection: "column",
         }}
       >
-        <h3 style={{ color: "gray" }}>#{currentCardIndex}</h3>
-        <h2 style={{ padding: "0 8px 0 8px" }}>
+        <h2 style={{ padding: "0 8px 8px 8px" }}>
           {currentCard["question-title"]}
         </h2>
         {shuffledAnswers.map((answer) => (
@@ -117,7 +131,15 @@ export const Game: React.FC = () => {
             </button>
           </div>
         )}
-        <div>{seenCards.length + " / " + flashcards.length}</div>
+        <div style={{ paddingTop: "32px" }}>
+          {seenCards.length + " / " + flashcards.length}
+        </div>
+        <button
+          style={{ paddingBottom: "32px", color: "gray" }}
+          onClick={resetGame}
+        >
+          start forfra
+        </button>
       </div>
     </div>
   );
