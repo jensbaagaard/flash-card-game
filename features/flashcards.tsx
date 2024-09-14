@@ -690,7 +690,7 @@ export const flashcards: Flashcard[] = [
     id: 71,
   },
   {
-    "question-title": "3.1.3 Førerens orienteringsvilkår",
+    "question-title": "Førerens orienteringsvilkår",
     "wrong-answers": [
       "Anvendelse af briller forbedrer altid muligheden for at orientere sig.",
       "Hovedbeklædning påvirker ikke førerens synsfelt.",
