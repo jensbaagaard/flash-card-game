@@ -81,6 +81,7 @@ export const Game: React.FC = () => {
           flexDirection: "column",
         }}
       >
+        <h3 style={{ color: "gray" }}>#{currentCardIndex}</h3>
         <h2>{currentCard["question-title"]}</h2>
         {shuffledAnswers.map((answer) => (
           <button
