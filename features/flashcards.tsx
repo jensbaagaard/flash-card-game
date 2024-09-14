@@ -966,7 +966,6 @@ export const flashcards: Flashcard[] = [
     "question-title":
       "Hvad bør man gøre, hvis man kører i bil til et sted, hvor der serveres alkohol?",
     "wrong-answers": [
-      "Drikke alkoholfri øl",
       "Drikke alkohol, men vente en time før man kører",
       "Drikke så meget man vil, hvis man føler sig i stand til at køre",
     ],
